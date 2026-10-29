@@ -1,8 +1,9 @@
 name: 장전 브리핑
 
 on:
-  schedule:
-    - cron: "30 22 * * 0-4"        # UTC 22:30 일~목 = KST 07:30 월~금 (장이 서는 날)
+  # 매일 자동 발행은 꺼 둠. 다시 켜려면 아래 두 줄의 # 을 지운다.
+  # schedule:
+  #   - cron: "30 22 * * 0-4"      # UTC 22:30 일~목 = KST 07:30 월~금 (장이 서는 날)
   workflow_dispatch:
     inputs:
       dry_run:
