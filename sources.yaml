@@ -1,0 +1,22 @@
+# 소스 후보 전체. adopt 는 audit_sources.py 측정 결과를 보고 사람이 정한다(근거는 store/source_audit.md).
+# tier 1 = 정보를 직접 발표하는 기관(1차 소스), tier 2 = 취재·전달하는 매체(2차 소스)
+# 강의 제외 목록(OpenAI·DeepMind·TechCrunch·The Verge·MIT TR·AI타임스)은 쓰지 않는다.
+
+sources:
+  - {name: 한국은행 보도자료, url: "https://www.bok.or.kr/portal/bbs/B0000502/news.rss?menuNo=201263", tier: 1, adopt: false}
+  - {name: 금융위원회 보도자료, url: "https://www.fsc.go.kr/about/fsc_bbs_rss/?fid=0111", tier: 1, adopt: false}
+  - {name: 정책브리핑 보도자료, url: "https://www.korea.kr/rss/pressrelease.xml", tier: 1, adopt: false}
+  - {name: 연합뉴스 경제, url: "https://www.yna.co.kr/rss/economy.xml", tier: 2, adopt: false}
+  - {name: 연합뉴스 마켓, url: "https://www.yna.co.kr/rss/market.xml", tier: 2, adopt: true}
+  - {name: 한국경제 증권, url: "https://www.hankyung.com/feed/finance", tier: 2, adopt: true}
+  - {name: 한국경제 경제, url: "https://www.hankyung.com/feed/economy", tier: 2, adopt: false}
+  - {name: 매일경제 증권, url: "https://www.mk.co.kr/rss/50200011/", tier: 2, adopt: true}
+  - {name: 매일경제 경제, url: "https://www.mk.co.kr/rss/30100041/", tier: 2, adopt: false}
+  - {name: 이데일리 증권, url: "http://rss.edaily.co.kr/stock_news.xml", tier: 2, adopt: false}
+  - {name: 머니투데이, url: "https://rss.mt.co.kr/mt_news.xml", tier: 2, adopt: false}
+  - {name: 동아일보 경제, url: "https://rss.donga.com/economy.xml", tier: 2, adopt: true}
+  - {name: 조선비즈, url: "https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml", tier: 2, adopt: false}
+  - {name: 뉴시스 경제, url: "https://newsis.com/RSS/economy.xml", tier: 2, adopt: true}
+  - {name: 경향신문 경제, url: "https://www.khan.co.kr/rss/rssdata/economy_news.xml", tier: 2, adopt: false}
+  - {name: SBS 경제, url: "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02", tier: 2, adopt: false}
+  - {name: 파이낸셜뉴스 증권, url: "https://www.fnnews.com/rss/r20/fn_realnews_stock.xml", tier: 2, adopt: false}

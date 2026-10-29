@@ -1,0 +1,45 @@
+name: 장전 브리핑
+
+on:
+  schedule:
+    - cron: "30 22 * * 0-4"        # UTC 22:30 일~목 = KST 07:30 월~금 (장이 서는 날)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "발행하지 않고 로그만 남기기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write                   # 실행 기록(store/)을 저장소에 다시 커밋하기 위해
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 브리핑 생성·발행
+        run: python run.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DRY_RUN: "0"
+          TZ: Asia/Seoul
+
+      - name: 실행 기록 커밋
+        if: always()
+        run: |
+          git config user.name "newsletter-bot"
+          git config user.email "newsletter-bot@users.noreply.github.com"
+          git add store/metrics.jsonl store/runs
+          git diff --cached --quiet || git commit -m "실행 기록 $(date +%F)"
+          git push

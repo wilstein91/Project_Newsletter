@@ -1,0 +1,353 @@
+{
+  "measured_at": "2026-10-29 11:53 KST",
+  "rows": [
+    {
+      "name": "한국은행 보도자료",
+      "tier": 1,
+      "url": "https://www.bok.or.kr/portal/bbs/B0000502/news.rss?menuNo=201263",
+      "http": 200,
+      "seconds": 0.5,
+      "entries": 100,
+      "last24h": 1,
+      "newest_h": 23.9,
+      "rss_summary_len": 3973,
+      "body_lens": [
+        105,
+        6391,
+        433
+      ],
+      "g1_rate": 0.33,
+      "robots_ok": false,
+      "relevance": 0.0,
+      "overlap": 0.0,
+      "verdict": "탈락",
+      "why": "G1 본문 33% · G3 robots.txt 금지"
+    },
+    {
+      "name": "금융위원회 보도자료",
+      "tier": 1,
+      "url": "https://www.fsc.go.kr/about/fsc_bbs_rss/?fid=0111",
+      "http": 503,
+      "entries": 0,
+      "verdict": "탈락",
+      "why": "G3 피드 응답 503"
+    },
+    {
+      "name": "정책브리핑 보도자료",
+      "tier": 1,
+      "url": "https://www.korea.kr/rss/pressrelease.xml",
+      "http": 404,
+      "entries": 0,
+      "verdict": "탈락",
+      "why": "G3 피드 응답 404"
+    },
+    {
+      "name": "연합뉴스 경제",
+      "tier": 2,
+      "url": "https://www.yna.co.kr/rss/economy.xml",
+      "http": 200,
+      "seconds": 0.3,
+      "entries": 120,
+      "last24h": 120,
+      "newest_h": 0.1,
+      "rss_summary_len": 69,
+      "body_lens": [
+        2593,
+        1030,
+        2163
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.27,
+      "overlap": 0.0,
+      "verdict": "예비",
+      "why": "같은 매체 다른 피드가 관련도 더 높음 (관련도 27%)"
+    },
+    {
+      "name": "연합뉴스 마켓",
+      "tier": 2,
+      "url": "https://www.yna.co.kr/rss/market.xml",
+      "http": 200,
+      "seconds": 0.2,
+      "entries": 120,
+      "last24h": 120,
+      "newest_h": 0.2,
+      "rss_summary_len": 70,
+      "body_lens": [
+        1030,
+        2288,
+        1877
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.49,
+      "overlap": 0.27,
+      "verdict": "채택",
+      "why": "관문 통과 · 관련도 49% (상위 5)"
+    },
+    {
+      "name": "한국경제 증권",
+      "tier": 2,
+      "url": "https://www.hankyung.com/feed/finance",
+      "http": 200,
+      "seconds": 0.1,
+      "entries": 50,
+      "last24h": 50,
+      "newest_h": 0.7,
+      "rss_summary_len": 0,
+      "body_lens": [
+        1245,
+        1118,
+        1667
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.5,
+      "overlap": 0.02,
+      "verdict": "채택",
+      "why": "관문 통과 · 관련도 50% (상위 5)"
+    },
+    {
+      "name": "한국경제 경제",
+      "tier": 2,
+      "url": "https://www.hankyung.com/feed/economy",
+      "http": 200,
+      "seconds": 0.1,
+      "entries": 50,
+      "last24h": 50,
+      "newest_h": 1.1,
+      "rss_summary_len": 0,
+      "body_lens": [
+        21701,
+        601,
+        553
+      ],
+      "g1_rate": 0.67,
+      "robots_ok": true,
+      "relevance": 0.32,
+      "overlap": 0.02,
+      "verdict": "예비",
+      "why": "같은 매체 다른 피드가 관련도 더 높음 (관련도 32%)"
+    },
+    {
+      "name": "매일경제 증권",
+      "tier": 2,
+      "url": "https://www.mk.co.kr/rss/50200011/",
+      "http": 200,
+      "seconds": 0.1,
+      "entries": 50,
+      "last24h": 50,
+      "newest_h": 0.3,
+      "rss_summary_len": 102,
+      "body_lens": [
+        1088,
+        939,
+        907
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.4,
+      "overlap": 0.0,
+      "verdict": "채택",
+      "why": "관문 통과 · 관련도 40% (상위 5)"
+    },
+    {
+      "name": "매일경제 경제",
+      "tier": 2,
+      "url": "https://www.mk.co.kr/rss/30100041/",
+      "http": 200,
+      "seconds": 0.1,
+      "entries": 50,
+      "last24h": 36,
+      "newest_h": 2.5,
+      "rss_summary_len": 102,
+      "body_lens": [
+        7987,
+        7601,
+        4464
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.28,
+      "overlap": 0.06,
+      "verdict": "예비",
+      "why": "같은 매체 다른 피드가 관련도 더 높음 (관련도 28%)"
+    },
+    {
+      "name": "이데일리 증권",
+      "tier": 2,
+      "url": "http://rss.edaily.co.kr/stock_news.xml",
+      "http": 200,
+      "seconds": 0.1,
+      "entries": 50,
+      "last24h": 8,
+      "newest_h": 22.4,
+      "rss_summary_len": 81,
+      "body_lens": [
+        0,
+        1258,
+        0
+      ],
+      "g1_rate": 0.33,
+      "robots_ok": true,
+      "relevance": 0.0,
+      "overlap": 0.0,
+      "verdict": "탈락",
+      "why": "G1 본문 33%"
+    },
+    {
+      "name": "머니투데이",
+      "tier": 2,
+      "url": "https://rss.mt.co.kr/mt_news.xml",
+      "http": 200,
+      "seconds": 0.2,
+      "entries": 100,
+      "last24h": 100,
+      "newest_h": 0.1,
+      "rss_summary_len": 506,
+      "body_lens": [
+        228,
+        1555,
+        1139
+      ],
+      "g1_rate": 0.67,
+      "robots_ok": true,
+      "relevance": 0.1,
+      "overlap": 0.0,
+      "verdict": "예비",
+      "why": "관련도 10% — 상위 5곳 밖"
+    },
+    {
+      "name": "동아일보 경제",
+      "tier": 2,
+      "url": "https://rss.donga.com/economy.xml",
+      "http": 200,
+      "seconds": 0.1,
+      "entries": 50,
+      "last24h": 50,
+      "newest_h": 0.3,
+      "rss_summary_len": 603,
+      "body_lens": [
+        989,
+        834,
+        1016
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.28,
+      "overlap": 0.02,
+      "verdict": "채택",
+      "why": "관문 통과 · 관련도 28% (상위 5)"
+    },
+    {
+      "name": "조선비즈",
+      "tier": 2,
+      "url": "https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+      "http": 200,
+      "seconds": 0.4,
+      "entries": 100,
+      "last24h": 100,
+      "newest_h": 0.1,
+      "rss_summary_len": 140,
+      "body_lens": [
+        924,
+        727,
+        733
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.02,
+      "overlap": 0.0,
+      "verdict": "예비",
+      "why": "관련도 2% — 상위 5곳 밖"
+    },
+    {
+      "name": "뉴시스 경제",
+      "tier": 2,
+      "url": "https://newsis.com/RSS/economy.xml",
+      "http": 200,
+      "seconds": 3.1,
+      "entries": 100,
+      "last24h": 100,
+      "newest_h": 0.3,
+      "rss_summary_len": 1753,
+      "body_lens": [
+        1671,
+        1429,
+        1477
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.42,
+      "overlap": 0.0,
+      "verdict": "채택",
+      "why": "관문 통과 · 관련도 42% (상위 5)"
+    },
+    {
+      "name": "경향신문 경제",
+      "tier": 2,
+      "url": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
+      "http": 200,
+      "seconds": 0.3,
+      "entries": 50,
+      "last24h": 50,
+      "newest_h": 0.7,
+      "rss_summary_len": 203,
+      "body_lens": [
+        1163,
+        1175,
+        1055
+      ],
+      "g1_rate": 1.0,
+      "robots_ok": true,
+      "relevance": 0.24,
+      "overlap": 0.0,
+      "verdict": "예비",
+      "why": "관련도 24% — 상위 5곳 밖"
+    },
+    {
+      "name": "SBS 경제",
+      "tier": 2,
+      "url": "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=02",
+      "http": 200,
+      "seconds": 0.4,
+      "entries": 29,
+      "last24h": 29,
+      "newest_h": 0.5,
+      "rss_summary_len": 81,
+      "body_lens": [
+        284,
+        415,
+        547
+      ],
+      "g1_rate": 0.0,
+      "robots_ok": true,
+      "relevance": 0.21,
+      "overlap": 0.0,
+      "verdict": "탈락",
+      "why": "G1 본문 0%"
+    },
+    {
+      "name": "파이낸셜뉴스 증권",
+      "tier": 2,
+      "url": "https://www.fnnews.com/rss/r20/fn_realnews_stock.xml",
+      "http": 200,
+      "seconds": 0.2,
+      "entries": 43,
+      "last24h": 0,
+      "newest_h": null,
+      "rss_summary_len": 426,
+      "body_lens": [
+        1957,
+        672,
+        539
+      ],
+      "g1_rate": 0.67,
+      "robots_ok": true,
+      "relevance": 0.0,
+      "overlap": 0,
+      "verdict": "탈락",
+      "why": "G2 24시간 0건"
+    }
+  ]
+}
